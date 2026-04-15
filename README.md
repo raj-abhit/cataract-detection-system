@@ -60,14 +60,20 @@ Output:
 
 ## Evaluation Commands
 
-### Validate/Test best model
+### Validate/Test best model (PowerShell)
 
-```bash
+```powershell
 @'
 from ultralytics import YOLO
 model = YOLO(r"runs/cataract_yolo_s50/weights/best.pt")
 model.val(data=r"cataract.yolov12_ready/data.yaml", split="test", device=0, imgsz=640, batch=16, workers=0)
 '@ | python -
+```
+
+### Validate/Test best model (cross-platform)
+
+```bash
+python -c "from ultralytics import YOLO; YOLO('runs/cataract_yolo_s50/weights/best.pt').val(data='cataract.yolov12_ready/data.yaml', split='test', device=0, imgsz=640, batch=16, workers=0)"
 ```
 
 ## Evaluation Metrics
