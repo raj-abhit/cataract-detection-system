@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local env and editor
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+
+# Streamlit/local caches
+.streamlit/
+
+# Large raw datasets and exports
+cataract.yolov12/
+cataract.yolov12_ready/
+cataract.yolov12.zip
+
+# Training artifacts
+runs/*
+!runs/cataract_yolo_s50/
+runs/cataract_yolo_s50/*
+!runs/cataract_yolo_s50/weights/
+runs/cataract_yolo_s50/weights/*
+!runs/cataract_yolo_s50/weights/best.pt
+
+# Extra model files (keep only main model above)
+yolo26n.pt
+yolov8n.pt
+yolov8s.pt
