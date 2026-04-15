@@ -23,8 +23,49 @@ python --version
 ```
 
 ```bash
-pip install ultralytics streamlit pillow
+pip install -r requirements.txt
 ```
+
+## Quick Start (For Beginners)
+
+### 1) Clone the repo
+
+```bash
+git clone https://github.com/raj-abhit/cataract-detection-system.git
+cd cataract-detection-system
+```
+
+### 2) Create and activate virtual environment
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Mac/Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3) Install all dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4) Run the app
+
+```bash
+streamlit run app.py
+```
+
+Then open:
+- `http://localhost:8501`
 
 ## Dataset Preparation
 
