@@ -14,7 +14,6 @@ It also includes a Streamlit UI for testing with:
 - Best trained model: `runs/cataract_yolo_s50/weights/best.pt`
 - Streamlit app: `app.py`
 - Split script: `prepare_yolo_split.py`
-- Quick train script (5 epochs): `train_yolo_quick.py`
 - Main train script (50 epochs): `train_yolo_s50.py`
 
 ## Environment
@@ -40,16 +39,7 @@ Prepared dataset config:
 
 ## Training Commands
 
-### 1) Quick GPU baseline (5 epochs)
-
-```bash
-python train_yolo_quick.py
-```
-
-Output:
-- `runs/cataract_yolo_fast_gpu/`
-
-### 2) Main GPU training (YOLOv8s, 50 epochs)
+### Main GPU training (YOLOv8s, 50 epochs)
 
 ```bash
 python train_yolo_s50.py
@@ -77,19 +67,6 @@ python -c "from ultralytics import YOLO; YOLO('runs/cataract_yolo_s50/weights/be
 ```
 
 ## Evaluation Metrics
-
-## Quick Baseline (`cataract_yolo_fast_gpu`, 5 epochs)
-
-- Validation:
-  - Precision: `0.799`
-  - Recall: `0.806`
-  - mAP50: `0.859`
-  - mAP50-95: `0.468`
-- Test:
-  - Precision: `0.817`
-  - Recall: `0.773`
-  - mAP50: `0.842`
-  - mAP50-95: `0.493`
 
 ## Main Model (`cataract_yolo_s50`, 50 epochs)
 

@@ -11,6 +11,8 @@ venv/
 
 # Streamlit/local caches
 .streamlit/
+streamlit.log
+streamlit.err.log
 
 # Large raw datasets and exports
 cataract.yolov12/
